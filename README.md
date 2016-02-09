@@ -6,3 +6,9 @@ Start My Silex est une version de silex qui permet de démarrer un projet rapide
 
 ####Présentation fonctionnalitées.
 
+
+
+####Contributeurs
+
+Grégoire Gripon
+	GitHub -> https://github.com/Skaanka
