@@ -1,4 +1,4 @@
 <?php
 
 // Home page
-$app->get('/', "Controller\NameController::NameAction")->bind('link');
+$app->get('/', "StartMySilex\Controller\HomeController::indexAction")->bind('link');

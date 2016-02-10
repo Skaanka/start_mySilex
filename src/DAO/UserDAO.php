@@ -1,12 +1,12 @@
 <?php
 
-namespace DAO;
+namespace StartMySilex\DAO;
 
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Security\Core\User\UserProviderInterface;
 use Symfony\Component\Security\Core\Exception\UsernameNotFoundException;
 use Symfony\Component\Security\Core\Exception\UnsupportedUserException;
-use Manager\User;
+use StartMySilex\Manager\User;
 
 class UserDAO extends DAO implements UserProviderInterface
 {
@@ -15,7 +15,7 @@ class UserDAO extends DAO implements UserProviderInterface
      *
      * @param integer $id The user id.
      *
-     * @return \Manager\User|throws an exception if no matching user is found
+     * @return StartMySilex\Manager\User|throws an exception if no matching user is found
      */
     public function find($id) {
         $sql = "SELECT * FROM users WHERE user_id=?";
@@ -49,7 +49,7 @@ class UserDAO extends DAO implements UserProviderInterface
     /**
      * Saves a user into the database.
      *
-     * @param \Manager\User $user The user to save
+     * @param StartMySilex\Manager\User $user The user to save
      */
     public function save(User $user) {
         $userData = array(
@@ -119,7 +119,7 @@ class UserDAO extends DAO implements UserProviderInterface
      */
     public function supportsClass($class)
     {
-        return 'Manager\User' === $class;
+        return 'StartMySilexManager\User' === $class;
     }
 
     /**

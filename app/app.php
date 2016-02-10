@@ -28,7 +28,7 @@ $app->register(new Silex\Provider\SecurityServiceProvider(), array(
             'logout' => true,
             'form' => array('login_path' => '/login', 'check_path' => '/login_check'),
             'users' => $app->share(function () use ($app) {
-                return new DAO\UserDAO($app['db']);
+                return new StartMySilex\DAO\UserDAO($app['db']);
             }),
         ),
     ),

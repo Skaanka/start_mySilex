@@ -1,13 +1,13 @@
 {
-    "name": "Start My Silex",
-    "description": "Starter Pack SIlex",
-    "homepage": "",
+    "name": "StartMySilex",
+    "description": "Starter Pack Silex",
+    "homepage": "https://github.com/Skaanka/start_mySilex",
     "license": "",
     "authors": [
         {
             "name": "Grégoire Gripon",
             "email": "g.gripon@jesuistondev.fr"
-            }
+        }
     ],
     "require": {
         "silex/silex": "1.3.*",
@@ -30,6 +30,6 @@
     },
     "autoload": {
         "psr-4": {
-            "StartMySilex": "src"}
+            "StartMySilex\\": "src"}
     }
 }

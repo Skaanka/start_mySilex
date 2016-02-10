@@ -1,6 +1,6 @@
 <?php
 
-namespace DAO;
+namespace StartMySilex\DAO;
 
 use Doctrine\DBAL\Connection;
 

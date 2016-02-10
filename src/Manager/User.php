@@ -1,6 +1,6 @@
 <?php
 
-namespace Manager;
+namespace StartMySilex\Manager;
 
 use Symfony\Component\Security\Core\User\UserInterface;
 

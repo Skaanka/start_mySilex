@@ -1,6 +1,6 @@
 <?php
 
-namespace Controller;
+namespace StartMySilex\Controller;
 
 use Silex\Application;
 use Symfony\Component\HttpFoundation\Request;
@@ -13,8 +13,7 @@ class HomeController {
      * @param Application $app Silex application
      */
     public function indexAction(Application $app) {
-        $myVar = $app['dao.name']->findAll();
-        return $app['twig']->render('index.html.twig', array('myVar' => $myVar));
+        return $app['twig']->render('index.html.twig');
     }
 
 }
