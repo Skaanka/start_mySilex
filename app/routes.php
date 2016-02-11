@@ -1,4 +1,4 @@
 <?php
 
 // Home page
-$app->get('/', "StartMySilex\Controller\HomeController::indexAction")->bind('home');
+$app->get('/', "Controller\HomeController::indexAction")->bind('home');

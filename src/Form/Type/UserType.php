@@ -1,6 +1,6 @@
 <?php
 
-namespace StartMySilex\Form\Type;
+namespace Form\Type;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;

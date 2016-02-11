@@ -1,14 +1,14 @@
 <?php
 
-namespace StartMySilex\DAO;
+namespace DAO;
 
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Security\Core\User\UserProviderInterface;
 use Symfony\Component\Security\Core\Exception\UsernameNotFoundException;
 use Symfony\Component\Security\Core\Exception\UnsupportedUserException;
-use StartMySilex\Manager\User;
+use Manager\User;
 
-class UserDAO extends DAO implements UserProviderInterface
+class UserDAO extends \StartMySilex\DAO\DAO implements UserProviderInterface
 {
     /**
      * Returns a user matching the supplied id.
@@ -119,7 +119,7 @@ class UserDAO extends DAO implements UserProviderInterface
      */
     public function supportsClass($class)
     {
-        return 'StartMySilexManager\User' === $class;
+        return 'User' === $class;
     }
 
     /**

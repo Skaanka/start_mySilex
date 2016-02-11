@@ -30,6 +30,8 @@
     },
     "autoload": {
         "psr-4": {
-            "StartMySilex\\": "src"}
+            "StartMySilex\\" : "StartMySilex",
+            "": "src"
+        }
     }
 }

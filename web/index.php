@@ -2,6 +2,8 @@
 
 require_once __DIR__.'/../vendor/autoload.php';
 
+require __DIR__.'/../StartMySilex/globals.php';
+
 $app = new Silex\Application();
 
 require __DIR__.'/../app/config/dev.php';
